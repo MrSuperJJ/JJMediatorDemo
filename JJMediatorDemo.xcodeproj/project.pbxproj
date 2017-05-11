@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4610F8041EC4AF2A00F2DEC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4610F8031EC4AF2A00F2DEC6 /* AppDelegate.swift */; };
+		4610F80B1EC4AF2A00F2DEC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4610F80A1EC4AF2A00F2DEC6 /* Assets.xcassets */; };
+		4610F80E1EC4AF2A00F2DEC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4610F80C1EC4AF2A00F2DEC6 /* LaunchScreen.storyboard */; };
+		4610F8171EC4AFB800F2DEC6 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4610F8161EC4AFB800F2DEC6 /* MainTableViewController.swift */; };
+		4610F8331EC4AFCD00F2DEC6 /* JJOCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4610F81A1EC4AFCD00F2DEC6 /* JJOCExtension.swift */; };
+		4610F8341EC4AFCD00F2DEC6 /* JJSwiftExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4610F81C1EC4AFCD00F2DEC6 /* JJSwiftExtension.swift */; };
+		4610F8351EC4AFCD00F2DEC6 /* JJSwiftMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4610F81E1EC4AFCD00F2DEC6 /* JJSwiftMediator.swift */; };
+		4610F8361EC4AFCD00F2DEC6 /* OCModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4610F8221EC4AFCD00F2DEC6 /* OCModule.m */; };
+		4610F8371EC4AFCD00F2DEC6 /* Target_OC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4610F8251EC4AFCD00F2DEC6 /* Target_OC.m */; };
+		4610F8381EC4AFCD00F2DEC6 /* SwiftModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4610F8271EC4AFCD00F2DEC6 /* SwiftModule.swift */; };
+		4610F8391EC4AFCD00F2DEC6 /* Target_Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4610F8291EC4AFCD00F2DEC6 /* Target_Swift.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4610F8001EC4AF2A00F2DEC6 /* JJMediatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJMediatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4610F8031EC4AF2A00F2DEC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4610F80A1EC4AF2A00F2DEC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4610F80D1EC4AF2A00F2DEC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4610F80F1EC4AF2A00F2DEC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4610F8161EC4AFB800F2DEC6 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		4610F81A1EC4AFCD00F2DEC6 /* JJOCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJOCExtension.swift; sourceTree = "<group>"; };
+		4610F81C1EC4AFCD00F2DEC6 /* JJSwiftExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJSwiftExtension.swift; sourceTree = "<group>"; };
+		4610F81E1EC4AFCD00F2DEC6 /* JJSwiftMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJSwiftMediator.swift; sourceTree = "<group>"; };
+		4610F8211EC4AFCD00F2DEC6 /* OCModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCModule.h; sourceTree = "<group>"; };
+		4610F8221EC4AFCD00F2DEC6 /* OCModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCModule.m; sourceTree = "<group>"; };
+		4610F8241EC4AFCD00F2DEC6 /* Target_OC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_OC.h; sourceTree = "<group>"; };
+		4610F8251EC4AFCD00F2DEC6 /* Target_OC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_OC.m; sourceTree = "<group>"; };
+		4610F8271EC4AFCD00F2DEC6 /* SwiftModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftModule.swift; sourceTree = "<group>"; };
+		4610F8291EC4AFCD00F2DEC6 /* Target_Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Target_Swift.swift; sourceTree = "<group>"; };
+		4610F83E1EC4AFF500F2DEC6 /* JJMediator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JJMediator-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4610F7FD1EC4AF2A00F2DEC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4610F7F71EC4AF2A00F2DEC6 = {
+			isa = PBXGroup;
+			children = (
+				4610F8021EC4AF2A00F2DEC6 /* JJMediatorDemo */,
+				4610F8011EC4AF2A00F2DEC6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4610F8011EC4AF2A00F2DEC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4610F8001EC4AF2A00F2DEC6 /* JJMediatorDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4610F8021EC4AF2A00F2DEC6 /* JJMediatorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4610F8031EC4AF2A00F2DEC6 /* AppDelegate.swift */,
+				4610F8161EC4AFB800F2DEC6 /* MainTableViewController.swift */,
+				4610F8181EC4AFCD00F2DEC6 /* Extension */,
+				4610F81F1EC4AFCD00F2DEC6 /* Module */,
+				4610F81D1EC4AFCD00F2DEC6 /* JJMediator */,
+				4610F8151EC4AF8900F2DEC6 /* Supporting Files */,
+			);
+			path = JJMediatorDemo;
+			sourceTree = "<group>";
+		};
+		4610F8151EC4AF8900F2DEC6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4610F83E1EC4AFF500F2DEC6 /* JJMediator-Bridging-Header.h */,
+				4610F80A1EC4AF2A00F2DEC6 /* Assets.xcassets */,
+				4610F80C1EC4AF2A00F2DEC6 /* LaunchScreen.storyboard */,
+				4610F80F1EC4AF2A00F2DEC6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4610F8181EC4AFCD00F2DEC6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4610F8191EC4AFCD00F2DEC6 /* OCExtension */,
+				4610F81B1EC4AFCD00F2DEC6 /* SwiftExtension */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4610F8191EC4AFCD00F2DEC6 /* OCExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4610F81A1EC4AFCD00F2DEC6 /* JJOCExtension.swift */,
+			);
+			path = OCExtension;
+			sourceTree = "<group>";
+		};
+		4610F81B1EC4AFCD00F2DEC6 /* SwiftExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4610F81C1EC4AFCD00F2DEC6 /* JJSwiftExtension.swift */,
+			);
+			path = SwiftExtension;
+			sourceTree = "<group>";
+		};
+		4610F81D1EC4AFCD00F2DEC6 /* JJMediator */ = {
+			isa = PBXGroup;
+			children = (
+				4610F81E1EC4AFCD00F2DEC6 /* JJSwiftMediator.swift */,
+			);
+			path = JJMediator;
+			sourceTree = "<group>";
+		};
+		4610F81F1EC4AFCD00F2DEC6 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				4610F8201EC4AFCD00F2DEC6 /* OCModule */,
+				4610F8261EC4AFCD00F2DEC6 /* SwiftModule */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		4610F8201EC4AFCD00F2DEC6 /* OCModule */ = {
+			isa = PBXGroup;
+			children = (
+				4610F8211EC4AFCD00F2DEC6 /* OCModule.h */,
+				4610F8221EC4AFCD00F2DEC6 /* OCModule.m */,
+				4610F8231EC4AFCD00F2DEC6 /* Target_Action */,
+			);
+			path = OCModule;
+			sourceTree = "<group>";
+		};
+		4610F8231EC4AFCD00F2DEC6 /* Target_Action */ = {
+			isa = PBXGroup;
+			children = (
+				4610F8241EC4AFCD00F2DEC6 /* Target_OC.h */,
+				4610F8251EC4AFCD00F2DEC6 /* Target_OC.m */,
+			);
+			path = Target_Action;
+			sourceTree = "<group>";
+		};
+		4610F8261EC4AFCD00F2DEC6 /* SwiftModule */ = {
+			isa = PBXGroup;
+			children = (
+				4610F8271EC4AFCD00F2DEC6 /* SwiftModule.swift */,
+				4610F8281EC4AFCD00F2DEC6 /* Target_Action */,
+			);
+			path = SwiftModule;
+			sourceTree = "<group>";
+		};
+		4610F8281EC4AFCD00F2DEC6 /* Target_Action */ = {
+			isa = PBXGroup;
+			children = (
+				4610F8291EC4AFCD00F2DEC6 /* Target_Swift.swift */,
+			);
+			path = Target_Action;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4610F7FF1EC4AF2A00F2DEC6 /* JJMediatorDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4610F8121EC4AF2A00F2DEC6 /* Build configuration list for PBXNativeTarget "JJMediatorDemo" */;
+			buildPhases = (
+				4610F7FC1EC4AF2A00F2DEC6 /* Sources */,
+				4610F7FD1EC4AF2A00F2DEC6 /* Frameworks */,
+				4610F7FE1EC4AF2A00F2DEC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JJMediatorDemo;
+			productName = JJMediatorDemo;
+			productReference = 4610F8001EC4AF2A00F2DEC6 /* JJMediatorDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4610F7F81EC4AF2A00F2DEC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Mr.JJ;
+				TargetAttributes = {
+					4610F7FF1EC4AF2A00F2DEC6 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = RAT87H825N;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4610F7FB1EC4AF2A00F2DEC6 /* Build configuration list for PBXProject "JJMediatorDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4610F7F71EC4AF2A00F2DEC6;
+			productRefGroup = 4610F8011EC4AF2A00F2DEC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4610F7FF1EC4AF2A00F2DEC6 /* JJMediatorDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4610F7FE1EC4AF2A00F2DEC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4610F80E1EC4AF2A00F2DEC6 /* LaunchScreen.storyboard in Resources */,
+				4610F80B1EC4AF2A00F2DEC6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4610F7FC1EC4AF2A00F2DEC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4610F8171EC4AFB800F2DEC6 /* MainTableViewController.swift in Sources */,
+				4610F8361EC4AFCD00F2DEC6 /* OCModule.m in Sources */,
+				4610F8371EC4AFCD00F2DEC6 /* Target_OC.m in Sources */,
+				4610F8041EC4AF2A00F2DEC6 /* AppDelegate.swift in Sources */,
+				4610F8331EC4AFCD00F2DEC6 /* JJOCExtension.swift in Sources */,
+				4610F8391EC4AFCD00F2DEC6 /* Target_Swift.swift in Sources */,
+				4610F8341EC4AFCD00F2DEC6 /* JJSwiftExtension.swift in Sources */,
+				4610F8351EC4AFCD00F2DEC6 /* JJSwiftMediator.swift in Sources */,
+				4610F8381EC4AFCD00F2DEC6 /* SwiftModule.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4610F80C1EC4AF2A00F2DEC6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4610F80D1EC4AF2A00F2DEC6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4610F8101EC4AF2A00F2DEC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4610F8111EC4AF2A00F2DEC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4610F8131EC4AF2A00F2DEC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RAT87H825N;
+				INFOPLIST_FILE = JJMediatorDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jj.JJMediatorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JJMediatorDemo/JJMediator-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "JJMediator-Swift.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4610F8141EC4AF2A00F2DEC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RAT87H825N;
+				INFOPLIST_FILE = JJMediatorDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jj.JJMediatorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JJMediatorDemo/JJMediator-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "JJMediator-Swift.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4610F7FB1EC4AF2A00F2DEC6 /* Build configuration list for PBXProject "JJMediatorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4610F8101EC4AF2A00F2DEC6 /* Debug */,
+				4610F8111EC4AF2A00F2DEC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4610F8121EC4AF2A00F2DEC6 /* Build configuration list for PBXNativeTarget "JJMediatorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4610F8131EC4AF2A00F2DEC6 /* Debug */,
+				4610F8141EC4AF2A00F2DEC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4610F7F81EC4AF2A00F2DEC6 /* Project object */;
+}
