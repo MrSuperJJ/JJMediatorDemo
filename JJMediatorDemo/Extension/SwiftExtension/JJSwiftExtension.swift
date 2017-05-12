@@ -33,7 +33,7 @@ extension JJMediator {
     
     // 有入参无返回值
     public func JJMediator_swiftModuleMethod(withName name: String?, callback: ((String?) -> Void)?) {
-        var parameters = JJDictionary()
+        var parameters = Dictionary<String, Any>()
         parameters["name"] = name
         parameters["callback"] = callback
         _ = self.perform(targetName: swiftTargetName, actionName: swiftModuleMethodWithParametersName, parameters: parameters, moduleName: swiftModuleName)
@@ -41,7 +41,7 @@ extension JJMediator {
     
     // 有入参返回基本类型
     public func JJMediator_swiftFetchNumberFromModuleMethod(withNumber number: Int) -> Int {
-        var parameters = JJDictionary()
+        var parameters = Dictionary<String, Any>()
         parameters["number"] = number
         let result = self.perform(targetName: swiftTargetName, actionName: swiftFetchNumberFromModuleMethodWithParametersName, parameters: parameters, moduleName: swiftModuleName) as? NSNumber
         if let result = result {

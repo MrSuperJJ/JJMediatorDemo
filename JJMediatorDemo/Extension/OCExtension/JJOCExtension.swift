@@ -37,7 +37,7 @@ extension JJMediator {
     
     // 有入参无返回值
     public func JJMediator_ocModuleMethod(withName name: String?, callback: (@convention(block) (String?) -> Void)?) {
-        var parameters = JJDictionary()
+        var parameters = Dictionary<String, Any>()
         parameters["name"] = name
         let callbackObject = unsafeBitCast(callback, to: AnyObject?.self)
         parameters["callback"] = callbackObject
@@ -46,7 +46,7 @@ extension JJMediator {
     
     // 有入参返回基本类型
     public func JJMediator_ocFetchNumberFromModuleMethod(withNumber number: Int) -> Int {
-        var parameters = JJDictionary()
+        var parameters = Dictionary<String, Any>()
         parameters["number"] = number
         return self.perform(targetName: ocTargetName, actionName: ocFetchNumberFromModuleMethodWithParametersName, parameters: parameters) as! Int
     }
