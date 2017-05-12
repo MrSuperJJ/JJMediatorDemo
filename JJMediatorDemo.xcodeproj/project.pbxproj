@@ -15,6 +15,7 @@
 		4610F8331EC4AFCD00F2DEC6 /* JJOCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4610F81A1EC4AFCD00F2DEC6 /* JJOCExtension.swift */; };
 		4610F8361EC4AFCD00F2DEC6 /* OCModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4610F8221EC4AFCD00F2DEC6 /* OCModule.m */; };
 		4610F8371EC4AFCD00F2DEC6 /* Target_OC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4610F8251EC4AFCD00F2DEC6 /* Target_OC.m */; };
+		4640791F1EC601A8002DBA3B /* JJMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4640791E1EC601A8002DBA3B /* JJMediator.swift */; };
 		C75665EA1EC5AD2C00A39678 /* JJSwiftExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75665E91EC5AD2C00A39678 /* JJSwiftExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		4610F8241EC4AFCD00F2DEC6 /* Target_OC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_OC.h; sourceTree = "<group>"; };
 		4610F8251EC4AFCD00F2DEC6 /* Target_OC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_OC.m; sourceTree = "<group>"; };
 		4610F83E1EC4AFF500F2DEC6 /* JJMediator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JJMediator-Bridging-Header.h"; sourceTree = "<group>"; };
+		4640791E1EC601A8002DBA3B /* JJMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJMediator.swift; sourceTree = "<group>"; };
 		C75665E91EC5AD2C00A39678 /* JJSwiftExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJSwiftExtension.swift; sourceTree = "<group>"; };
 		EB3E64A45CFB011F3C1DF271 /* Pods-JJMediatorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJMediatorDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JJMediatorDemo/Pods-JJMediatorDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +80,7 @@
 		4610F8021EC4AF2A00F2DEC6 /* JJMediatorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4640791D1EC601A8002DBA3B /* JJMediator */,
 				4610F8031EC4AF2A00F2DEC6 /* AppDelegate.swift */,
 				4610F8161EC4AFB800F2DEC6 /* MainTableViewController.swift */,
 				4610F8181EC4AFCD00F2DEC6 /* Extension */,
@@ -140,6 +143,14 @@
 				4610F8251EC4AFCD00F2DEC6 /* Target_OC.m */,
 			);
 			path = Target_Action;
+			sourceTree = "<group>";
+		};
+		4640791D1EC601A8002DBA3B /* JJMediator */ = {
+			isa = PBXGroup;
+			children = (
+				4640791E1EC601A8002DBA3B /* JJMediator.swift */,
+			);
+			path = JJMediator;
 			sourceTree = "<group>";
 		};
 		BB708E4105AC4E5C2649A915 /* Pods */ = {
@@ -284,6 +295,7 @@
 			files = (
 				4610F8171EC4AFB800F2DEC6 /* MainTableViewController.swift in Sources */,
 				4610F8361EC4AFCD00F2DEC6 /* OCModule.m in Sources */,
+				4640791F1EC601A8002DBA3B /* JJMediator.swift in Sources */,
 				4610F8371EC4AFCD00F2DEC6 /* Target_OC.m in Sources */,
 				4610F8041EC4AF2A00F2DEC6 /* AppDelegate.swift in Sources */,
 				4610F8331EC4AFCD00F2DEC6 /* JJOCExtension.swift in Sources */,

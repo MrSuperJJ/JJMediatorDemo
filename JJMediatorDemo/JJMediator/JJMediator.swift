@@ -8,8 +8,6 @@
 
 import UIKit
 
-public typealias JJDictionary = Dictionary<String, Any>
-
 public class JJMediator: NSObject {
     
     // 单例
@@ -33,7 +31,7 @@ public class JJMediator: NSObject {
             return NSNumber(value: false)
         }
         
-        var parameters = JJDictionary()
+        var parameters = Dictionary<String, Any>()
         
         let targetName = url.host
         let actionName = url.lastPathComponent
@@ -66,7 +64,7 @@ public class JJMediator: NSObject {
     ///   - parameters: 参数
     ///   - isSwiftClass: target是否是Swift类
     /// - Returns: Optional<AnyObject>对象
-    public func perform(targetName: String, actionName: String, parameters: JJDictionary?, moduleName: String? = nil) -> AnyObject? {
+    public func perform(targetName: String, actionName: String, parameters: Dictionary<String, Any>?, moduleName: String? = nil) -> AnyObject? {
         // Target名称（类名），Swift类需加上命名空间
         let targetClassString: String
         if let moduleName = moduleName {
