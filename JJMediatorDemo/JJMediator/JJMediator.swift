@@ -11,16 +11,16 @@ import UIKit
 public typealias JJDictionary = Dictionary<String, Any>
 
 public class JJMediator: NSObject {
-
+    
     // 单例
     private static let singleInstance = JJMediator()
-
+    
     public class func sharedInstance() -> JJMediator {
         return singleInstance
     }
-
+    
     /// 远程APP调用入口
-    /// 格式 - scheme://[target]/[action]?[params]，例子 - scheme://target/action?isSwiftClass=1&key=value
+    /// 格式 - scheme://[target]/[action]?[params]，例子 - scheme://target/action?key=value
     /// 上述URL为固定格式，有定制化需求的话，请修改具体的处理逻辑
     ///
     /// - Parameters:
@@ -34,7 +34,6 @@ public class JJMediator: NSObject {
         }
         
         var parameters = JJDictionary()
-        var isSwiftClass = false
         
         let targetName = url.host
         let actionName = url.lastPathComponent
@@ -46,16 +45,11 @@ public class JJMediator: NSObject {
                 if keyAndValueArray.count != 2 {
                     continue
                 }
-                // 判断是否Taget类是否是Swift类
-                if keyAndValueArray[0] == "isSwiftClass" {
-                    isSwiftClass = (keyAndValueArray[1] as NSString).boolValue
-                    continue
-                }
                 parameters[keyAndValueArray[0]] = keyAndValueArray[1]
             }
-
+            
             // 远程调用的Action方法，为保证结构统一，parameters参数建议使用字典类型封装
-            let result = perform(targetName: targetName, actionName: actionName, parameters: parameters, isSwiftClass: isSwiftClass)
+            let result = perform(targetName: targetName, actionName: actionName, parameters: parameters)
             if let result = result{
                 completion(result)
             }
@@ -63,7 +57,7 @@ public class JJMediator: NSObject {
         
         return NSNumber(value: true)
     }
-
+    
     /// 本地组件调用入口
     ///
     /// - Parameters:
@@ -72,12 +66,17 @@ public class JJMediator: NSObject {
     ///   - parameters: 参数
     ///   - isSwiftClass: target是否是Swift类
     /// - Returns: Optional<AnyObject>对象
-    public func perform(targetName: String, actionName: String, parameters: JJDictionary?, isSwiftClass: Bool = false) -> AnyObject? {
+    public func perform(targetName: String, actionName: String, parameters: JJDictionary?, moduleName: String? = nil) -> AnyObject? {
         // Target名称（类名），Swift类需加上命名空间
-        let targetClassString = (isSwiftClass ? self.fetchNameSpace() + "." : "") + "Target_" + targetName
+        let targetClassString: String
+        if let moduleName = moduleName {
+            targetClassString = moduleName + "." + "Target_" + targetName
+        } else {
+            targetClassString = "Target_" + targetName
+        }
         // Action名称（方法名）
         let actionString = "Action_" + actionName + (parameters != nil ? ":" : "" )
-
+        
         //        // 根据Target获取Class，返回Optional<NSObject.Type>类型的值
         //        let targetClass = NSClassFromString(targetClassString) as? NSObject.Type
         //        // Class实例化,返回Optional<NSObject>类型的值
@@ -88,7 +87,7 @@ public class JJMediator: NSObject {
         let target = targetClass?.alloc()
         // 根据Action获取Selector
         let action = NSSelectorFromString(actionString)
-
+        
         if let target = target {
             // 检查Class实例能否响应Action方法，并执行Selector
             if target.responds(to: action) {
@@ -119,36 +118,10 @@ public class JJMediator: NSObject {
             return nil
         }
     }
-
+    
     // 获取命名空间
     private func fetchNameSpace() -> String {
         let namespace = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String
         return namespace
-    }
-}
-
-// MARK:- 兼容性扩展
-extension JJMediator {
-    
-    /// 本地组件调用入口（使用Objective-C类实现Target-Action）
-    ///
-    /// - Parameters:
-    ///   - targetName: target名称
-    ///   - actionName: action名称
-    ///   - parameters: 参数
-    /// - Returns: Optional<AnyObject>对象
-    public func performOC(targetName: String, actionName: String, parameters: JJDictionary?) -> AnyObject? {
-        return self.perform(targetName: targetName, actionName: actionName, parameters: parameters, isSwiftClass: false)
-    }
-    
-    /// 本地组件调用入口（使用Swift类实现Target-Action）
-    ///
-    /// - Parameters:
-    ///   - targetName: target名称
-    ///   - actionName: action名称
-    ///   - parameters: 参数
-    /// - Returns: Optional<AnyObject>对象
-    public func performSwift(targetName: String, actionName: String, parameters: JJDictionary?) -> AnyObject? {
-        return self.perform(targetName: targetName, actionName: actionName, parameters: parameters, isSwiftClass: true)
     }
 }
