@@ -41,6 +41,11 @@ extension JJMediator {
     public func JJMediator_swiftFetchNumberFromModuleMethod(withNumber number: Int) -> Int {
         var parameters = JJDictionary()
         parameters["number"] = number
-        return self.performSwift(targetName: swiftTargetName, actionName: swiftFetchNumberFromModuleMethodWithParametersName, parameters: parameters) as! Int
+        let result = self.performSwift(targetName: swiftTargetName, actionName: swiftFetchNumberFromModuleMethodWithParametersName, parameters: parameters) as? NSNumber
+        if let result = result {
+            return result.intValue
+        } else {
+            return 0
+        }
     }
 }

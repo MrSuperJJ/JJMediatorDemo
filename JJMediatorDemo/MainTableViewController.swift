@@ -73,10 +73,10 @@ class MainTableViewController: UITableViewController {
             JJMediator.sharedInstance().JJMediator_swiftModuleMethod()
             // 无入参返回对象类型
             let ocString = JJMediator.sharedInstance().JJMediator_swiftFetchNameFromModuleMethod()
-            print("fetchNameFromModuleMethod:\(ocString!)") // OC函数的返回值在Swift中为Optional类型，因为可以返回nil
+            print("fetchNameFromModuleMethod:\(ocString ?? "nil")") // OC函数的返回值在Swift中为Optional类型，因为可以返回nil
             // 有入参无返回值
             JJMediator.sharedInstance().JJMediator_swiftModuleMethod(withName: "jj", callback: { (result) in
-                print("moduleMethodWithName:\(result ?? "")")
+                print("moduleMethodWithName:\(result ?? "nil")")
             })
             // 有入参返回基本类型
             let swiftNumber = JJMediator.sharedInstance().JJMediator_swiftFetchNumberFromModuleMethod(withNumber: 18)

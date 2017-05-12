@@ -16,8 +16,8 @@
 		4610F8341EC4AFCD00F2DEC6 /* JJSwiftExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4610F81C1EC4AFCD00F2DEC6 /* JJSwiftExtension.swift */; };
 		4610F8361EC4AFCD00F2DEC6 /* OCModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4610F8221EC4AFCD00F2DEC6 /* OCModule.m */; };
 		4610F8371EC4AFCD00F2DEC6 /* Target_OC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4610F8251EC4AFCD00F2DEC6 /* Target_OC.m */; };
-		4610F8381EC4AFCD00F2DEC6 /* SwiftModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4610F8271EC4AFCD00F2DEC6 /* SwiftModule.swift */; };
-		4610F8391EC4AFCD00F2DEC6 /* Target_Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4610F8291EC4AFCD00F2DEC6 /* Target_Swift.swift */; };
+		C7C64D351EC5A2CB00D6907F /* SwiftModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C64D321EC5A2CB00D6907F /* SwiftModule.swift */; };
+		C7C64D361EC5A2CB00D6907F /* Target_Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C64D341EC5A2CB00D6907F /* Target_Swift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +35,9 @@
 		4610F8221EC4AFCD00F2DEC6 /* OCModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCModule.m; sourceTree = "<group>"; };
 		4610F8241EC4AFCD00F2DEC6 /* Target_OC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_OC.h; sourceTree = "<group>"; };
 		4610F8251EC4AFCD00F2DEC6 /* Target_OC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_OC.m; sourceTree = "<group>"; };
-		4610F8271EC4AFCD00F2DEC6 /* SwiftModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftModule.swift; sourceTree = "<group>"; };
-		4610F8291EC4AFCD00F2DEC6 /* Target_Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Target_Swift.swift; sourceTree = "<group>"; };
 		4610F83E1EC4AFF500F2DEC6 /* JJMediator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JJMediator-Bridging-Header.h"; sourceTree = "<group>"; };
+		C7C64D321EC5A2CB00D6907F /* SwiftModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftModule.swift; sourceTree = "<group>"; };
+		C7C64D341EC5A2CB00D6907F /* Target_Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Target_Swift.swift; sourceTree = "<group>"; };
 		EB3E64A45CFB011F3C1DF271 /* Pods-JJMediatorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJMediatorDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JJMediatorDemo/Pods-JJMediatorDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,8 +130,8 @@
 		4610F81F1EC4AFCD00F2DEC6 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				C7C64D311EC5A2CB00D6907F /* SwiftModule */,
 				4610F8201EC4AFCD00F2DEC6 /* OCModule */,
-				4610F8261EC4AFCD00F2DEC6 /* SwiftModule */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -155,23 +155,6 @@
 			path = Target_Action;
 			sourceTree = "<group>";
 		};
-		4610F8261EC4AFCD00F2DEC6 /* SwiftModule */ = {
-			isa = PBXGroup;
-			children = (
-				4610F8271EC4AFCD00F2DEC6 /* SwiftModule.swift */,
-				4610F8281EC4AFCD00F2DEC6 /* Target_Action */,
-			);
-			path = SwiftModule;
-			sourceTree = "<group>";
-		};
-		4610F8281EC4AFCD00F2DEC6 /* Target_Action */ = {
-			isa = PBXGroup;
-			children = (
-				4610F8291EC4AFCD00F2DEC6 /* Target_Swift.swift */,
-			);
-			path = Target_Action;
-			sourceTree = "<group>";
-		};
 		BB708E4105AC4E5C2649A915 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +162,23 @@
 				EB3E64A45CFB011F3C1DF271 /* Pods-JJMediatorDemo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C7C64D311EC5A2CB00D6907F /* SwiftModule */ = {
+			isa = PBXGroup;
+			children = (
+				C7C64D321EC5A2CB00D6907F /* SwiftModule.swift */,
+				C7C64D331EC5A2CB00D6907F /* Target_Action */,
+			);
+			path = SwiftModule;
+			sourceTree = "<group>";
+		};
+		C7C64D331EC5A2CB00D6907F /* Target_Action */ = {
+			isa = PBXGroup;
+			children = (
+				C7C64D341EC5A2CB00D6907F /* Target_Swift.swift */,
+			);
+			path = Target_Action;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,14 +304,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7C64D361EC5A2CB00D6907F /* Target_Swift.swift in Sources */,
 				4610F8171EC4AFB800F2DEC6 /* MainTableViewController.swift in Sources */,
 				4610F8361EC4AFCD00F2DEC6 /* OCModule.m in Sources */,
+				C7C64D351EC5A2CB00D6907F /* SwiftModule.swift in Sources */,
 				4610F8371EC4AFCD00F2DEC6 /* Target_OC.m in Sources */,
 				4610F8041EC4AF2A00F2DEC6 /* AppDelegate.swift in Sources */,
 				4610F8331EC4AFCD00F2DEC6 /* JJOCExtension.swift in Sources */,
-				4610F8391EC4AFCD00F2DEC6 /* Target_Swift.swift in Sources */,
 				4610F8341EC4AFCD00F2DEC6 /* JJSwiftExtension.swift in Sources */,
-				4610F8381EC4AFCD00F2DEC6 /* SwiftModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
