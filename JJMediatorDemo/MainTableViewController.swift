@@ -8,6 +8,7 @@
 
 import UIKit
 import JJMediator
+import SwiftExtension
 
 class MainTableViewController: UITableViewController {
     
