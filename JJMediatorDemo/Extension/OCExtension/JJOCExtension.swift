@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import JJMediator
 
 /*
  * Swift闭包想要通过字典或数组传值给Objective-C函数调用的步骤：

@@ -24,7 +24,7 @@ class Target_Swift: NSObject {
     }
     
     // 有入参无返回值
-    public func Action_swiftModuleMethod(parameters: JJDictionary) {
+    public func Action_swiftModuleMethod(parameters: Dictionary<String, Any>) {
         let swiftModule = SwiftModule()
         let name = parameters["name"] as? String
         let callback = parameters["callback"] as? (String?) -> Void
@@ -32,7 +32,7 @@ class Target_Swift: NSObject {
     }
     
     // 有入参返回基本类型
-    public func Action_swiftFetchNumberFromModuleMethod(parameters: JJDictionary) -> NSNumber {
+    public func Action_swiftFetchNumberFromModuleMethod(parameters: Dictionary<String, Any>) -> NSNumber {
         let swiftModule = SwiftModule()
         let number = parameters["number"] as! Int
         let result = swiftModule.fetchNumberFromModuleMethod(withNumber: number)

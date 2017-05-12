@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import JJMediator
 
 // Target名称
 let swiftTargetName = "Swift";

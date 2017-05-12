@@ -1,0 +1,9 @@
+source 'https://github.com/CocoaPods/Specs.git'        #官方仓库地址
+source ‘https://github.com/JJModulization/JJMediatorSpecs.git’        #私有仓库地址
+use_frameworks!
+
+target 'JJMediatorDemo' do
+
+pod 'JJMediator'
+
+end
