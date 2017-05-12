@@ -27,12 +27,12 @@ extension JJMediator {
     
     // 无入参无返回值
     public func JJMediator_ocModuleMethod() {
-        _ = self.performOC(targetName: ocTargetName, actionName: ocModuleMethodName, parameters: nil)
+        _ = self.perform(targetName: ocTargetName, actionName: ocModuleMethodName, parameters: nil)
     }
     
     // 无入参返回对象类型
     public func JJMediator_ocFetchNameFromModuleMethod() -> String? {
-        return self.performOC(targetName: ocTargetName, actionName: ocFetchNameFromModuleMethodName, parameters: nil) as? String
+        return self.perform(targetName: ocTargetName, actionName: ocFetchNameFromModuleMethodName, parameters: nil) as? String
     }
     
     // 有入参无返回值
@@ -41,14 +41,14 @@ extension JJMediator {
         parameters["name"] = name
         let callbackObject = unsafeBitCast(callback, to: AnyObject?.self)
         parameters["callback"] = callbackObject
-        _ = self.performOC(targetName: ocTargetName, actionName: ocModuleMethodWithParametersName, parameters: parameters)
+        _ = self.perform(targetName: ocTargetName, actionName: ocModuleMethodWithParametersName, parameters: parameters)
     }
     
     // 有入参返回基本类型
     public func JJMediator_ocFetchNumberFromModuleMethod(withNumber number: Int) -> Int {
         var parameters = JJDictionary()
         parameters["number"] = number
-        return self.performOC(targetName: ocTargetName, actionName: ocFetchNumberFromModuleMethodWithParametersName, parameters: parameters) as! Int
+        return self.perform(targetName: ocTargetName, actionName: ocFetchNumberFromModuleMethodWithParametersName, parameters: parameters) as! Int
     }
     
 }

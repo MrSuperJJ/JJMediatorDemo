@@ -9,6 +9,8 @@
 import Foundation
 import JJMediator
 
+// Module名称
+let swiftModuleName = "SwiftModule"
 // Target名称
 let swiftTargetName = "Swift";
 // Action名称
@@ -21,12 +23,12 @@ extension JJMediator {
 
     // 无入参无返回值
     public func JJMediator_swiftModuleMethod() {
-        _ = self.performSwift(targetName: swiftTargetName, actionName: swiftModuleMethodName, parameters: nil)
+        _ = self.perform(targetName: swiftTargetName, actionName: swiftModuleMethodName, parameters: nil, moduleName: swiftModuleName)
     }
     
     // 无入参返回对象类型
     public func JJMediator_swiftFetchNameFromModuleMethod() -> String? {
-        return self.performSwift(targetName: swiftTargetName, actionName: swiftFetchNameFromModuleMethodName, parameters: nil) as? String
+        return self.perform(targetName: swiftTargetName, actionName: swiftFetchNameFromModuleMethodName, parameters: nil, moduleName: swiftModuleName) as? String
     }
     
     // 有入参无返回值
@@ -34,14 +36,14 @@ extension JJMediator {
         var parameters = JJDictionary()
         parameters["name"] = name
         parameters["callback"] = callback
-        _ = self.performSwift(targetName: swiftTargetName, actionName: swiftModuleMethodWithParametersName, parameters: parameters)
+        _ = self.perform(targetName: swiftTargetName, actionName: swiftModuleMethodWithParametersName, parameters: parameters, moduleName: swiftModuleName)
     }
     
     // 有入参返回基本类型
     public func JJMediator_swiftFetchNumberFromModuleMethod(withNumber number: Int) -> Int {
         var parameters = JJDictionary()
         parameters["number"] = number
-        let result = self.performSwift(targetName: swiftTargetName, actionName: swiftFetchNumberFromModuleMethodWithParametersName, parameters: parameters) as? NSNumber
+        let result = self.perform(targetName: swiftTargetName, actionName: swiftFetchNumberFromModuleMethodWithParametersName, parameters: parameters, moduleName: swiftModuleName) as? NSNumber
         if let result = result {
             return result.intValue
         } else {

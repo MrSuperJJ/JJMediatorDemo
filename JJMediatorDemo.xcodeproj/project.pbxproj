@@ -13,11 +13,9 @@
 		4610F80E1EC4AF2A00F2DEC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4610F80C1EC4AF2A00F2DEC6 /* LaunchScreen.storyboard */; };
 		4610F8171EC4AFB800F2DEC6 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4610F8161EC4AFB800F2DEC6 /* MainTableViewController.swift */; };
 		4610F8331EC4AFCD00F2DEC6 /* JJOCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4610F81A1EC4AFCD00F2DEC6 /* JJOCExtension.swift */; };
-		4610F8341EC4AFCD00F2DEC6 /* JJSwiftExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4610F81C1EC4AFCD00F2DEC6 /* JJSwiftExtension.swift */; };
 		4610F8361EC4AFCD00F2DEC6 /* OCModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4610F8221EC4AFCD00F2DEC6 /* OCModule.m */; };
 		4610F8371EC4AFCD00F2DEC6 /* Target_OC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4610F8251EC4AFCD00F2DEC6 /* Target_OC.m */; };
-		C7C64D351EC5A2CB00D6907F /* SwiftModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C64D321EC5A2CB00D6907F /* SwiftModule.swift */; };
-		C7C64D361EC5A2CB00D6907F /* Target_Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C64D341EC5A2CB00D6907F /* Target_Swift.swift */; };
+		C75665EA1EC5AD2C00A39678 /* JJSwiftExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75665E91EC5AD2C00A39678 /* JJSwiftExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,14 +28,12 @@
 		4610F80F1EC4AF2A00F2DEC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4610F8161EC4AFB800F2DEC6 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		4610F81A1EC4AFCD00F2DEC6 /* JJOCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJOCExtension.swift; sourceTree = "<group>"; };
-		4610F81C1EC4AFCD00F2DEC6 /* JJSwiftExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJSwiftExtension.swift; sourceTree = "<group>"; };
 		4610F8211EC4AFCD00F2DEC6 /* OCModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCModule.h; sourceTree = "<group>"; };
 		4610F8221EC4AFCD00F2DEC6 /* OCModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCModule.m; sourceTree = "<group>"; };
 		4610F8241EC4AFCD00F2DEC6 /* Target_OC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_OC.h; sourceTree = "<group>"; };
 		4610F8251EC4AFCD00F2DEC6 /* Target_OC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_OC.m; sourceTree = "<group>"; };
 		4610F83E1EC4AFF500F2DEC6 /* JJMediator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JJMediator-Bridging-Header.h"; sourceTree = "<group>"; };
-		C7C64D321EC5A2CB00D6907F /* SwiftModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftModule.swift; sourceTree = "<group>"; };
-		C7C64D341EC5A2CB00D6907F /* Target_Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Target_Swift.swift; sourceTree = "<group>"; };
+		C75665E91EC5AD2C00A39678 /* JJSwiftExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJSwiftExtension.swift; sourceTree = "<group>"; };
 		EB3E64A45CFB011F3C1DF271 /* Pods-JJMediatorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJMediatorDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JJMediatorDemo/Pods-JJMediatorDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,8 +101,8 @@
 		4610F8181EC4AFCD00F2DEC6 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				C75665E81EC5AD2C00A39678 /* SwiftExtension */,
 				4610F8191EC4AFCD00F2DEC6 /* OCExtension */,
-				4610F81B1EC4AFCD00F2DEC6 /* SwiftExtension */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -119,18 +115,9 @@
 			path = OCExtension;
 			sourceTree = "<group>";
 		};
-		4610F81B1EC4AFCD00F2DEC6 /* SwiftExtension */ = {
-			isa = PBXGroup;
-			children = (
-				4610F81C1EC4AFCD00F2DEC6 /* JJSwiftExtension.swift */,
-			);
-			path = SwiftExtension;
-			sourceTree = "<group>";
-		};
 		4610F81F1EC4AFCD00F2DEC6 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				C7C64D311EC5A2CB00D6907F /* SwiftModule */,
 				4610F8201EC4AFCD00F2DEC6 /* OCModule */,
 			);
 			path = Module;
@@ -164,21 +151,12 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C7C64D311EC5A2CB00D6907F /* SwiftModule */ = {
+		C75665E81EC5AD2C00A39678 /* SwiftExtension */ = {
 			isa = PBXGroup;
 			children = (
-				C7C64D321EC5A2CB00D6907F /* SwiftModule.swift */,
-				C7C64D331EC5A2CB00D6907F /* Target_Action */,
+				C75665E91EC5AD2C00A39678 /* JJSwiftExtension.swift */,
 			);
-			path = SwiftModule;
-			sourceTree = "<group>";
-		};
-		C7C64D331EC5A2CB00D6907F /* Target_Action */ = {
-			isa = PBXGroup;
-			children = (
-				C7C64D341EC5A2CB00D6907F /* Target_Swift.swift */,
-			);
-			path = Target_Action;
+			path = SwiftExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,14 +282,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7C64D361EC5A2CB00D6907F /* Target_Swift.swift in Sources */,
 				4610F8171EC4AFB800F2DEC6 /* MainTableViewController.swift in Sources */,
 				4610F8361EC4AFCD00F2DEC6 /* OCModule.m in Sources */,
-				C7C64D351EC5A2CB00D6907F /* SwiftModule.swift in Sources */,
 				4610F8371EC4AFCD00F2DEC6 /* Target_OC.m in Sources */,
 				4610F8041EC4AF2A00F2DEC6 /* AppDelegate.swift in Sources */,
 				4610F8331EC4AFCD00F2DEC6 /* JJOCExtension.swift in Sources */,
-				4610F8341EC4AFCD00F2DEC6 /* JJSwiftExtension.swift in Sources */,
+				C75665EA1EC5AD2C00A39678 /* JJSwiftExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
