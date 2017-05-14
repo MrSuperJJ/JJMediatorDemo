@@ -8,7 +8,6 @@
 
 #import "Target_OC.h"
 #import "OCModule.h"
-#import "JJMediator-Swift.h"
 
 @implementation Target_OC
 
