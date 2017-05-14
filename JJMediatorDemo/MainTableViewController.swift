@@ -7,8 +7,13 @@
 //
 
 import UIKit
-import JJMediator
-import SwiftExtension
+import JJMediator      // 导入JJMediator核心模块
+import SwiftExtension  // 导入SwiftExtension模块
+import OCExtension     // 导入OCExtension模块
+/*
+ * 1.SwiftModule模块不需要导入，在运行时会自动调用
+ * 2.在JJMediator-Bridging-Header.h文件中导入OCModule模块
+ */
 
 class MainTableViewController: UITableViewController {
     
@@ -60,10 +65,10 @@ class MainTableViewController: UITableViewController {
             JJMediator.sharedInstance().JJMediator_ocModuleMethod()
             // 无入参返回对象类型
             let ocString = JJMediator.sharedInstance().JJMediator_ocFetchNameFromModuleMethod()
-            print("fetchNameFromModuleMethod:\(ocString!)") // OC函数的返回值在Swift中为Optional类型，因为可以返回nil
+            print("fetchNameFromModuleMethod:\(ocString ?? "nil")") // OC函数的返回值在Swift中为Optional类型，因为可以返回nil
             // 有入参无返回值
             JJMediator.sharedInstance().JJMediator_ocModuleMethod(withName: "jj", callback: { (result) in
-                print("moduleMethodWithName:\(result ?? "")")
+                print("moduleMethodWithName:\(result ?? "nil")")
             })
             // 有入参返回基本类型
             let swiftNumber = JJMediator.sharedInstance().JJMediator_ocFetchNumberFromModuleMethod(withNumber: 18)

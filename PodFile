@@ -5,6 +5,8 @@ use_frameworks!
 target 'JJMediatorDemo' do
 
 pod ’SwiftExtension’
+pod 'OCExtension'
 pod 'SwiftModule'
+pod 'OCModule'
 
 end

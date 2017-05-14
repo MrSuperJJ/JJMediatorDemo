@@ -12,9 +12,6 @@
 		4610F80B1EC4AF2A00F2DEC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4610F80A1EC4AF2A00F2DEC6 /* Assets.xcassets */; };
 		4610F80E1EC4AF2A00F2DEC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4610F80C1EC4AF2A00F2DEC6 /* LaunchScreen.storyboard */; };
 		4610F8171EC4AFB800F2DEC6 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4610F8161EC4AFB800F2DEC6 /* MainTableViewController.swift */; };
-		4610F8331EC4AFCD00F2DEC6 /* JJOCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4610F81A1EC4AFCD00F2DEC6 /* JJOCExtension.swift */; };
-		4610F8361EC4AFCD00F2DEC6 /* OCModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4610F8221EC4AFCD00F2DEC6 /* OCModule.m */; };
-		4610F8371EC4AFCD00F2DEC6 /* Target_OC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4610F8251EC4AFCD00F2DEC6 /* Target_OC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,11 +23,6 @@
 		4610F80D1EC4AF2A00F2DEC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4610F80F1EC4AF2A00F2DEC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4610F8161EC4AFB800F2DEC6 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
-		4610F81A1EC4AFCD00F2DEC6 /* JJOCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJOCExtension.swift; sourceTree = "<group>"; };
-		4610F8211EC4AFCD00F2DEC6 /* OCModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCModule.h; sourceTree = "<group>"; };
-		4610F8221EC4AFCD00F2DEC6 /* OCModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCModule.m; sourceTree = "<group>"; };
-		4610F8241EC4AFCD00F2DEC6 /* Target_OC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_OC.h; sourceTree = "<group>"; };
-		4610F8251EC4AFCD00F2DEC6 /* Target_OC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_OC.m; sourceTree = "<group>"; };
 		4610F83E1EC4AFF500F2DEC6 /* JJMediator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JJMediator-Bridging-Header.h"; sourceTree = "<group>"; };
 		EB3E64A45CFB011F3C1DF271 /* Pods-JJMediatorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJMediatorDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JJMediatorDemo/Pods-JJMediatorDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,8 +70,6 @@
 			children = (
 				4610F8031EC4AF2A00F2DEC6 /* AppDelegate.swift */,
 				4610F8161EC4AFB800F2DEC6 /* MainTableViewController.swift */,
-				4610F8181EC4AFCD00F2DEC6 /* Extension */,
-				4610F81F1EC4AFCD00F2DEC6 /* Module */,
 				4610F8151EC4AF8900F2DEC6 /* Supporting Files */,
 			);
 			path = JJMediatorDemo;
@@ -94,49 +84,6 @@
 				4610F80F1EC4AF2A00F2DEC6 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4610F8181EC4AFCD00F2DEC6 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				4610F8191EC4AFCD00F2DEC6 /* OCExtension */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		4610F8191EC4AFCD00F2DEC6 /* OCExtension */ = {
-			isa = PBXGroup;
-			children = (
-				4610F81A1EC4AFCD00F2DEC6 /* JJOCExtension.swift */,
-			);
-			path = OCExtension;
-			sourceTree = "<group>";
-		};
-		4610F81F1EC4AFCD00F2DEC6 /* Module */ = {
-			isa = PBXGroup;
-			children = (
-				4610F8201EC4AFCD00F2DEC6 /* OCModule */,
-			);
-			path = Module;
-			sourceTree = "<group>";
-		};
-		4610F8201EC4AFCD00F2DEC6 /* OCModule */ = {
-			isa = PBXGroup;
-			children = (
-				4610F8211EC4AFCD00F2DEC6 /* OCModule.h */,
-				4610F8221EC4AFCD00F2DEC6 /* OCModule.m */,
-				4610F8231EC4AFCD00F2DEC6 /* Target_Action */,
-			);
-			path = OCModule;
-			sourceTree = "<group>";
-		};
-		4610F8231EC4AFCD00F2DEC6 /* Target_Action */ = {
-			isa = PBXGroup;
-			children = (
-				4610F8241EC4AFCD00F2DEC6 /* Target_OC.h */,
-				4610F8251EC4AFCD00F2DEC6 /* Target_OC.m */,
-			);
-			path = Target_Action;
 			sourceTree = "<group>";
 		};
 		BB708E4105AC4E5C2649A915 /* Pods */ = {
@@ -272,10 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4610F8171EC4AFB800F2DEC6 /* MainTableViewController.swift in Sources */,
-				4610F8361EC4AFCD00F2DEC6 /* OCModule.m in Sources */,
-				4610F8371EC4AFCD00F2DEC6 /* Target_OC.m in Sources */,
 				4610F8041EC4AF2A00F2DEC6 /* AppDelegate.swift in Sources */,
-				4610F8331EC4AFCD00F2DEC6 /* JJOCExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
